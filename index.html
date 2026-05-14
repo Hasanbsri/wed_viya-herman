@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">    
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wedding Invitation – Herman & Silvia</title>
@@ -301,6 +302,284 @@ button{ background:var(--primary); border:none; padding:10px 25px; border-radius
     .couple{flex-direction:column;text-align:center;}
     .corner{width:50px;height:50px;}
     #share-panel{width:calc(100vw - 32px); right:16px;}
+}
+/* =====================================================
+   RESPONSIVE MOBILE & TABLET
+===================================================== */
+@media (max-width: 1024px){
+    .hero-text h1{
+        font-size: clamp(34px,7vw,55px);
+    }
+
+    .countdown{
+        margin: -20px 20px 0;
+        padding: 30px 20px;
+    }
+
+    .event-container{
+        gap:20px;
+    }
+}
+
+@media (max-width: 768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    /* COVER */
+    .cover-couple-name{
+        font-size: 42px;
+    }
+
+    .cover-tanggal{
+        font-size:14px;
+        letter-spacing:3px;
+    }
+
+    .btn-buka{
+        padding:12px 28px;
+        font-size:11px;
+    }
+
+    /* HERO */
+    .hero{
+        height:100vh;
+    }
+
+    .hero img{
+        object-position:center;
+    }
+
+    .hero-text{
+        width:90%;
+        padding:0 10px;
+    }
+
+    .hero-text h1{
+        font-size:42px;
+        line-height:1.2;
+    }
+
+    .hero-text p{
+        font-size:13px;
+        letter-spacing:2px;
+    }
+
+    .btn{
+        padding:10px 25px;
+        font-size:12px;
+    }
+
+    /* SECTION */
+    .section{
+        padding:60px 18px;
+    }
+
+    .section h2{
+        font-size:30px;
+    }
+
+    .subtext{
+        font-size:14px;
+        line-height:1.7;
+    }
+
+    /* COUPLE */
+    .couple{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .text{
+        width:100%;
+        max-width:320px;
+        font-size:14px;
+    }
+
+    .foto-tengah{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .oval{
+        width:150px;
+        height:210px;
+    }
+
+    .love{
+        width:40px;
+        height:40px;
+    }
+
+    /* COUNTDOWN */
+    .countdown{
+        width:92%;
+        margin:-10px auto 0;
+        padding:30px 15px;
+        border-radius:18px;
+    }
+
+    .flex{
+        flex-wrap:wrap;
+        gap:18px;
+        font-size:16px;
+    }
+
+    .flex div{
+        min-width:70px;
+    }
+
+    /* EVENT */
+    .event-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .event-box{
+        width:100%;
+        max-width:340px;
+    }
+
+    /* CARD */
+    .card{
+        width:100%;
+        padding:24px 18px;
+        border-radius:16px;
+    }
+
+    /* FORM */
+    input,
+    textarea{
+        width:100%;
+        max-width:100%;
+        font-size:14px;
+    }
+
+    button{
+        font-size:13px;
+    }
+
+    /* UCAPAN */
+    .item{
+        width:100%;
+        max-width:100%;
+        font-size:14px;
+    }
+
+    /* MAP */
+    .map-box iframe{
+        height:280px;
+    }
+
+    /* GIFT */
+    .gift-box{
+        width:100%;
+        max-width:340px;
+    }
+
+    /* FOOTER */
+    .footer{
+        padding:35px 18px;
+    }
+
+    .sosmed{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+    }
+
+    .sosmed a{
+        margin:0;
+        font-size:13px;
+    }
+
+    /* FLOAT BUTTON */
+    #musicBtn,
+    #share-btn,
+    #theme-toggle-btn{
+        width:42px;
+        height:42px;
+    }
+
+    #share-btn{
+        bottom:72px;
+    }
+
+    #theme-switcher{
+        left:15px;
+        bottom:15px;
+    }
+
+    #musicBtn{
+        right:15px;
+        bottom:15px;
+    }
+
+    #share-panel{
+        width:calc(100vw - 30px);
+        right:15px;
+        bottom:125px;
+    }
+
+    #theme-panel{
+        min-width:150px;
+    }
+}
+
+@media (max-width: 480px){
+
+    .cover-couple-name{
+        font-size:34px;
+    }
+
+    .hero-text h1{
+        font-size:34px;
+    }
+
+    .section h2{
+        font-size:26px;
+    }
+
+    .countdown h2{
+        font-size:28px;
+    }
+
+    .flex{
+        gap:12px;
+    }
+
+    .flex div{
+        min-width:60px;
+        font-size:14px;
+    }
+
+    .event-box{
+        padding:24px 18px;
+    }
+
+    .date,
+    .place{
+        font-size:13px;
+    }
+
+    .time{
+        font-size:18px;
+    }
+
+    .card p{
+        font-size:14px;
+        line-height:1.8;
+    }
+
+    .copy{
+        line-height:1.7;
+    }
+}
+img{
+    max-width:100%;
+    display:block;
 }
 </style>
 </head>
